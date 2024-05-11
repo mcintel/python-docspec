@@ -25,7 +25,7 @@ import sys
 import docspec
 
 try:
-    from termcolor import colored
+    from termcolor import colored  # type: ignore
 except ImportError:
 
     def colored(s, *args, **kwargs):  # type: ignore
